@@ -1,0 +1,270 @@
+// mempelajari tipe data
+// variabel
+// struktur data
+// fitur baru
+
+// tipe data array dan method array
+// const acak = [2003, "buku", true]; // bisa menyimpan apa saja
+
+// beberapa method di dalam array yaitu : concat, sort, splice, slice, pop, push, shift, unshift
+
+// method array pop dan push
+//beberapa method array yang sering dipake
+
+// const brand = ["volvo", "bmx", "ferari"];
+// brand.push("lamborhini") // push untuk menambah item baru di depan setelah ferari
+// brand.pop()// pop untuk menghapus item di depanya contoh dihapus adalah "ferari"
+// brand.unshift("barbel") // unshift untuk menambah item baru di belakang
+// brand.shift() // shift untuk menghapus item di bealakang 
+// brand.slice(0, 2) // slice ini untuk mengahapus item contoh yang dihapus ini adalah "volvo" dan "ferari"
+// brand.splice(1, 2) // splice untuk menghapus juga tetapi yang dihapus ini adalah "bmx" dan "ferari"
+// brand.indexOf("bmx") // untuk mencari index di array
+// brand.sort() // ini untuk mengatur sesuai huruf abjad contoh = ['bmx', 'ferari', 'volvo']
+
+// nested array
+// const tic_tac = [
+//     ["x", null, 0],
+//     [null, "x", 0],
+//     [0, null, "x"],
+// ]
+// console.log(tic_tac[0][1]) // maka hasilnya itu adalah ["x", null, 0] = [null]
+
+
+// struktur data object
+// struktur simple nya itu:
+
+// const person = {       // ini cara untuk memanggil data object
+//     name: "jhon doe", // person.name = "yohanes"
+//     age: 20, // person.age = 20
+//     hobi: "mancing" // person.hobi = "mancing"
+// }
+
+
+//cara memanggil object di dalam array
+// const product = [
+//     {
+//         name : "javascript",
+//         rating : 99,
+//         price : 3.23
+//     },
+//     {
+//         name : "python",
+//         rating : 80,
+//         price : 2.22
+//     },
+//     {
+//         name : "c++",
+//         rating : 95,
+//         price : 4.23
+//     }
+// ]
+// console.log(product[0].name) // [0].name = "javascript"
+// console.log(product[1].name) // [1].name = "python"
+// console.log(product[1].rating) // [1].rating = 4.23 
+
+//cara memanggil array di dalam  object
+// const cart = {
+//     nama : " shoes ",
+//     merk : " x munich",
+//     size : [40, 43, 44, 39]
+// }
+// console.log(cart.size[2]) // outputnya 44
+// console.log(cart.merk) // outputnya x munich
+
+
+// pengulangan for loop (for, while, for of , for in)
+
+
+
+// tipe data string contoh const nama = " hello world"
+
+// logic pembuat keputusan
+// if(5 > 3){
+//     console.log("nilai lebih tinggi")
+// }else{
+//     console.log("nilai rendah")
+// }
+
+// if( 5 + 5 === 10){
+//     console.log(" betul")
+// }else{
+//     console.log("salah")
+// }
+
+// memakai gerbang and, or, not
+
+//and 
+// contoh ke 1
+// let age = 19;
+// let gender = "male";
+
+// if(age == 19 && gender == "male"){
+//     console.log("legal")
+// }else{
+//     console.log("tidak legal")
+// }
+
+//contoh ke 2
+// const pass = prompt("masukan username anda ")
+
+// if(pass.length >= 6 && pass.indexOf(' ') === -1){
+//     console.log("pasword valid")
+// }else{
+//     console.log("password tidak valid")
+// }
+
+// memakai boolean
+// let bool;
+
+// bool = 5 == 5;
+// console.log(bool) // true
+
+// bool = (5 > 4 && 5 < 3) // ini memakai and // keduanya harus benar
+// console.log(bool)// false
+
+// bool = ( 10 > 4 || 10 < 5) // ini memakai or // salah satu harus ada yang benar
+// console.log(bool) //true 
+
+// bool = ( 7 != 6 ) // ini memakai  not // ini terbalik  jika 6 != 12 maka true
+// console.log(bool) // true
+
+
+// or 
+// const user = prompt("masukan username anda");
+
+// if(user == "esa unggul" || user == "informatika"){
+//     console.log(" username valid")
+// }else{
+//     console.log("username tidak valid")
+// }
+
+
+//not
+
+// const password = prompt("masukan pasword")
+
+// if(password != "esa unggul"){
+//     console.log("benar")
+// }else{
+//     console.log("salah")
+//}
+
+// switch
+// const fruit = prompt("pilih buah")
+
+// switch(fruit){
+//     case 1:
+//         console.log("durian");
+//         break;
+//     case 2:
+//         console.log("durian");
+//         break;
+//     case 3:
+//         console.log("mangga");
+//         break;
+//     default:
+//         console.log("tidak ada buah")
+// }
+
+
+// looping for, while, for in, for of
+
+// for dasar
+// for(let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// // while
+// let i = 0;
+// while(i <= 10){
+//     i++;
+//     console.log(i)
+// }
+
+// // for of(khusus melakukan pada array)
+// const fruits = ["mangga", "jeruk", "lemon", "nagka"];
+
+// for(let fruit of fruits){
+//     console.log(`buah ${fruit}`)
+// }
+
+// //for in(khusus melakukan pada object)
+// const studentscore = {
+//     yohan: 98,
+//     marcel: 99,
+//     mail: 98,
+//     gilbert: 95,
+//     budi: 80,
+// }
+
+// for(let student in studentscore){
+//     console.log(`${student} memiliki nilai ${studentscore[student]}`)
+// }
+
+// //tebak tebakan angka memakai while
+// let maximun = parseInt(prompt("masukan nilai maximun"))
+// while(!maximun){
+//     maximun = parseInt(prompt("masukan nilai maximun"))
+// }
+
+// const targetnum = Math.floor(Math.random() * maximun) + 1;
+// console.log(targetnum)
+
+// let guess = parseInt(prompt("isi tebakan pertama kamu"));
+// let attemp = 1;
+
+// while(parseInt(guess) !== targetnum){
+//     attemp++
+//     if(guess > targetnum){
+//         guess = prompt("terlalu tinggi tebak lagi")
+//     }else{
+//         guess = prompt("terlalu rendah tebak lagi")
+//     }
+// }
+
+// alert(`selamat tebakan anda benar, dengan percobaan ${attemp} kali`)
+
+
+// function
+function panggil(name) {
+    console.log(`selamat pagi ${name}`)
+}
+panggil("yohanes")
+
+//function expresion
+const pertambahan = function(x){
+    let hasil = x + x
+    console.log(hasil)
+}
+
+pertambahan(7)
+
+// multiple argument dan parameter
+function perkalian(a, b){
+    let hasil = a * b;
+    console.log(hasil)
+}
+
+perkalian(5, 5)
+
+//statment return pada function
+function jumlah(i= 10, y=20){
+    const total = i / y;
+    console.log(total)
+    return total;
+}
+
+jumlah()
+
+
+//visabilitas variabel sesuai scope atau ruang lingkup
+
+let linux = "redhat"
+
+function progaming(){
+    let linux = "antutu"
+    console.log(linux)
+}
+
+progaming()
+console.log(linux)
