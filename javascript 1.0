@@ -268,3 +268,235 @@ function progaming(){
 
 progaming()
 console.log(linux)
+
+
+// let progamming = "javascript";
+
+// function typsafe() {
+//     let progamming = "typescript"
+//     console.log(progamming)
+// }
+
+// console.log(progamming)
+
+// //lexical scope (memakai var)
+// let tinggi = 8;
+// if(tinggi > 5){
+//     var lebar = 10;
+//     console.log(lebar)
+// }
+// //console.log(tinggi)
+
+// for(let index = 0; index < 10; index++){
+//     var indexNumber = index;
+//     console.log(indexNumber)
+// }
+// console.log(indexNumber)
+
+
+//block scope variabel
+// function lamarkerja() {
+//     const jabatan = "progaming"
+//     function orangdalam() {
+//         let kenalan = `orang dalam bisa memasukan ${jabatan}`
+//         console.log(kenalan)
+//     }
+//     orangdalam()
+// }
+
+
+// //function sebagai argument function lain
+// //contoh
+// function duakali(func) {
+//     func()
+//     func()
+// }
+
+// function lempardadu() {
+//     const hasil = Math.floor(Math.random() * 6) + 1;
+//     console.log(hasil)
+// }
+// duakali()
+
+
+//function bernilai balik function
+//contoh 
+// function hasilnya_adalah_function(){
+//     const rand = Math.random();
+//     if(rand > 10){
+//         return function() {
+//             console.log("selamat, angkanya lebih besar")
+//         }
+//     }else{
+//         return function() {
+//             console.log("maaf,mungkin bisa coba lagi")
+//         }
+//     }
+// }
+
+// this adalah keyword sakti
+//constoh
+// const saya = {
+//     nama: "yohan",
+//     profesi: "software engginer and web development",
+//     kenalan: function(){
+//         return `saya ${this.nama} dan saya profesi saya ${this.profesi}`
+//     }
+// }
+
+// try and catch adalah penyelamat
+//contoh
+// try {
+//     saya.kenalan()
+// } catch {
+//     console.log("error")
+// }
+
+// function teriak(msg) {
+//     try {
+//         console.log(msg.toUpperCase())
+//     } catch (error) {
+//         console.log(error)
+//         console.log(`silahkan masukan tipe data string pada argument teriak()`)
+//     }
+// }
+
+// callback function dan method-method milik array
+// beberapa method = foreach, map, settimeout dan setinterval, filter, every dan some, reduce, 
+
+// foreach method
+//contoh
+// const angka = [1,2,3,4,5,6,7,8,9];
+
+// angka.forEach(function(el) {
+//     if(el % 2){
+//         console.log(el)
+//     }
+// })
+
+
+
+// map method
+// const angka1 = [1,2,3,4,5,6,7,8,9];
+// const angkadouble = angka1.map(function(num){
+//     return num * 2;
+// })
+
+// const expression = ["yohanes", "budi", "sandhika galih"];
+// const capsexpression = expression.map(function(exprs) {
+//     return exprs.toUpperCase();
+// })
+// console.log(expression)
+// console.log(capsexpression)
+
+// const anime = [
+//     {
+//         title: "one punch man",
+//         rating: 94,
+//     },
+//     {
+//         title: "naruto",
+//         rating: 80,
+//     },
+//     {
+//         title: "blue lock",
+//         rating: 78,
+//     }
+// ]
+
+// const movies = anime.map(function(movies) {
+//     return movies.title.toUpperCase()
+// })
+
+// // arrow function () => {}
+// //contoh
+// const pertambahan = (x) => {
+//     return x + x
+// }
+// pertambahan(5)
+
+// // return secara implisit dari arrow function
+// const random = () => Math.floor(Math.random() * 1000)
+// const add = (a, b) => a + b;
+
+// // memahami settimeout dan setinterval
+// console.log("hallo") // settimeout
+
+// setTimeout(() => {
+//     console.log("kenapa")
+// }, 5000)
+// console.log("gass")
+
+// // setinterval
+// const intervas = setInterval(() => {
+//     console.log(Math.random())
+// },5000)
+
+
+// memilih data tertentu di dalam array dengan filter method
+//contoh
+// const anime = [
+//     {
+//         title: "one punch man",
+//         rating: 94,
+//         year: 2014
+//     },
+//     {
+//         title: "naruto",
+//         rating: 80,
+//         year: 2000
+//     },
+//     {
+//         title: "blue lock",
+//         rating: 78,
+//         year: 2023
+//     }
+// ]
+
+// const animes = anime.filter((animes) => animes.rating >= 89)
+// const animecukupbagus = anime.filter((animess) => animess.year > 2015)
+
+
+// menentukan benar atau salah pada array dengan every dan some method
+//contoh 
+// const examscore = [80,90,85,79,77,93];
+// const isgraduate = examscore.every((score) => score >= 75)
+
+// const anime = [
+//     {
+//         title: "one punch man",
+//         rating: 94,
+//         year: 2014
+//     },
+//     {
+//         title: "naruto",
+//         rating: 80,
+//         year: 2000
+//     },
+//     {
+//         title: "blue lock",
+//         rating: 78,
+//         year: 2023
+//     },
+//     {
+//         title: "attack on titan",
+//         rating: 90,
+//         year: 2016
+//     },
+//     {
+//         title: "dective conan",
+//         rating: 60,
+//         year: 1999
+//     }
+// ]
+
+// const movies = anime.some((movies) => movies.rating < 2004)
+
+
+// // mendapatkan satu nilai sesuai kondisi dari sebuah array dengan reduce
+// const subtotal = [1500, 20000, 4000, 19000, 32000];
+// const total = subtotal.reduce((currenttotal, singlesubtotal) => {
+//     return currenttotal + singlesubtotal;
+// })
+
+
