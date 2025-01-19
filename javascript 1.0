@@ -174,12 +174,23 @@
 //     console.log(i)
 // }
 
+// let num = 0;
+// while (num < 10) {
+//   num++;
+//   document.write(`<p>${num}</p>`);
+// }
+
 // // while
 // let i = 0;
 // while(i <= 10){
 //     i++;
 //     console.log(i)
 // }
+
+// do {
+//   document.write(`<p> perulangan ke ${counter}</p>`);
+//   counter++;
+// } while (counter < 5);
 
 // // for of(khusus melakukan pada array)
 // const fruits = ["mangga", "jeruk", "lemon", "nagka"];
@@ -200,6 +211,17 @@
 // for(let student in studentscore){
 //     console.log(`${student} memiliki nilai ${studentscore[student]}`)
 // }
+
+// const nama = ["bogin", "marcel", "mail", "gilbert"];
+// for (let person of nama) {
+//   document.write(`<p>${person}</p>`);
+// }
+
+memakai for in
+// for (let personal in person) {
+//   document.write(`<p> ${personal}: ${person[personal]} </p>`);
+// }
+
 
 // //tebak tebakan angka memakai while
 // let maximun = parseInt(prompt("masukan nilai maximun"))
