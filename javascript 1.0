@@ -522,3 +522,50 @@ console.log(linux)
 // })
 
 
+Oke, aku kasih list method JavaScript yang **sering banget dipakai** dan **penting** buat kamu hafal, terutama buat array, string, dan object. Aku buat simpel ya:
+
+---
+
+### 1. **Array Methods**  
+(ngolah data yang bentuknya kumpulan/list)
+
+- `.forEach()` → looping semua elemen.
+- `.map()` → buat array baru dengan memodifikasi setiap elemen.
+- `.filter()` → ambil elemen yang **lolos kondisi**.
+- `.find()` → cari **satu** elemen yang cocok.
+- `.some()` → cek apakah **ada satu saja** elemen yang cocok (hasil true/false).
+- `.every()` → cek apakah **semua** elemen cocok (hasil true/false).
+- `.push()` → nambahin elemen ke **akhir** array.
+- `.pop()` → hapus elemen **terakhir**.
+- `.shift()` → hapus elemen **pertama**.
+- `.unshift()` → nambah elemen di **awal** array.
+- `.includes()` → cek apakah array **mengandung** elemen tertentu (hasil true/false).
+- `.sort()` → mengurutkan elemen array.
+- `.reverse()` → membalik urutan array.
+
+---
+
+### 2. **String Methods**  
+(ngolah data berbentuk teks)
+
+- `.toUpperCase()` → ubah jadi huruf besar semua.
+- `.toLowerCase()` → ubah jadi huruf kecil semua.
+- `.slice()` → potong sebagian string.
+- `.replace()` → ganti bagian tertentu dalam string.
+- `.split()` → potong string jadi array.
+- `.includes()` → cek apakah string mengandung kata tertentu.
+- `.startsWith()` → cek apakah string diawali dengan kata tertentu.
+- `.endsWith()` → cek apakah string diakhiri dengan kata tertentu.
+- `.trim()` → hapus spasi di awal/akhir string.
+
+---
+
+### 3. **Object Methods**  
+(ngolah data yang bentuknya pasangan key-value)
+
+- `Object.keys(obj)` → ambil semua **key** jadi array.
+- `Object.values(obj)` → ambil semua **value** jadi array.
+- `Object.entries(obj)` → ambil **key-value** jadi array of array.
+- `Object.assign(target, source)` → gabung 2 object.
+
+
